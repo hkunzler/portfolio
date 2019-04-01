@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%
+}
+
+#home {
+    background-image: url(media/northern_lights_pink.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    color: rgb(227, 241, 253);
+    position: relative;
+    z-index: -9;
+    text-shadow: 1px 1px 2px black;
+}
+
+#skill {
+    width: 100%;
+    min-height: 100vh;
+    background: #323433;
+    box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 25px;
+    color: white;
+}
+
+#skill h1 {
+    text-shadow: 1px 1px 2px black
+}
+
+.skill-container {
+    width: 100%;
+    background-color: #3e4441;
+    margin-bottom: 15px;
+    margin-top: 5px;
+
+}
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.html,
+.css,
+.js,
+.react,
+.mongodb,
+.express,
+.c,
+.mips,
+.node {
+    background: #BA224B;
+    color: white;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 90%;
+}
+
+.js {
+    width: 90%;
+}
+
+.react {
+    width: 90%;
+}
+
+.mongodb {
+    width: 80%;
+}
+
+.express {
+    width: 80%;
+}
+
+.c {
+    width: 70%;
+}
+
+.mips {
+    width: 70%;
+}
+
+.node {
+    width: 85%;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(#211D2D, #44162a);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99 !important;
+    padding-right: 25px;
+    box-shadow: 1px 2px 3px rgb(29, 26, 41);
+}
+
+.fa-linkedin {
+    color: #0077B5;
+    font-size: 150%;
+}
+
+#initials a {
+    text-decoration: none;
+
+}
+
+#initials {
+    font-size: 150%;
+    font-family: 'Concert One',
+        cursive;
+    color: white !important;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000 !important;
+    padding-left: 25px;
+    background-size: contain;
+}
+
+.grid-box>.fa-github-alt {
+    color: black;
+    padding-right: 25px;
+}
+
+.fa-github-alt {
+    color: black;
+    font-size: 150%;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin: 25px 0;
+}
+
+.links {
+    color: rgb(227, 241, 253);
+}
+
+.active {
+    color: black;
+    background-color: rgba(227, 241, 253, 0.5);
+    border-radius: 10%;
+    padding: 5px 10px;
+    text-shadow: none !important;
+}
+
+.nav-bar a:hover {
+    background: white;
+    border-radius: 10%;
+    padding: 5px 10px;
+    color: black;
+    text-shadow: none !important;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 5px;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    left: 0;
+
+}
+
+
+#word {
+    font-size: 10vw;
+    text-align: center;
+}
+
+#me {
+    background: url(media/harmony.png);
+    width: 25vh;
+    height: 25vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 30%;
+    margin-bottom: 25px;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: middle;
+    font-size: 10vw;
+    text-align: center;
+    color: white;
+}
+
+.grid-box {
+    color: white;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.grid-box .fa-linkedin,
+.grid-box .fa-github-alt {
+    color: white;
+}
+
+#projects {
+    width: 100%;
+    min-height: 100vh;
+    background: #626b52;
+    box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#projects h1,
+#about h1,
+#resume h1 {
+    font-size: 10vw;
+    text-align: center;
+    color: white;
+    padding-top: 75px;
+}
+
+.chaos-apparel {
+    background: url(media/chaos_apparel.jpg);
+    height: 176px;
+}
+
+.movie-search {
+    background: url(media/movie_search.jpg);
+    height: 193px;
+}
+
+.coffee-rush {
+    background: url(media/coffee_rush.jpg);
+    height: 242px;
+}
+
+#projects h3 {
+    padding-top: 15px;
+}
+
+.chaos-apparel,
+.movie-search,
+.coffee-rush {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+
+.image-hover {
+    opacity: 0;
+    transition: .3s;
+    background: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+
+}
+
+.image-hover:hover {
+    text-align: center;
+    opacity: .7;
+    padding-top: 0 !important;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+#flex-row{
+    display: flex;
+    flex-direction: column;
+}
+#harmony-pic{
+    background: url(media/harmony2.jpg);
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about {
+    background: url(media/northern_lights_blue.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    z-index: -9;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    font-size: 150%;
+    padding: 5px 20%;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 25px;
+}
+
+#contact {
+    background: #004f47;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.9);
+}
+
+#contact h1 {
+    font-size: 10vw;
+    padding-top: 75px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: white;
+}
+
+.input {
+    margin: 10px 0;
+}
+
+.message {
+    padding-bottom: 50px;
+}
+
+#contact button {
+    color: white;
+    display: inline-block;
+    padding: 12px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #9A6FB5;
+    border: none;
+    border-radius: 15px;
+}
+
+#contact button:hover {
+    background-color: rgb(1, 100, 153);
+}
+
+#contact button:active {
+    background-color: rgb(1, 100, 153);
+    box-shadow: 0 5px rgb(38, 42, 47);
+    transform: translateY(4px);
+}
+
+.fa-envelope {
+    color: white;
+    font-size: 150%;
+}
+
+#resume {
+    background: url(media/northern-lights.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    z-index: -9;
+}
+
+#resume a {
+    color: white;
+    font-size: 5vw;
+}
+
+#form p,
+#form .input,
+#form button,
+#form h2 {
+    font-size: 5vw;
+}
+
+@media only screen and (min-width: 360px) {
+    .chaos-apparel {
+        height: 217px;
+    }
+
+    .movie-search {
+        height: 217px;
+    }
+
+    .coffee-rush {
+        height: 277px;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    .chaos-apparel {
+        height: 244px;
+    }
+
+    .movie-search {
+        height: 244px;
+    }
+
+    .coffee-rush {
+        height: 313px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .chaos-apparel {
+        height: 455px;
+    }
+
+    .movie-search {
+        height: 455px;
+    }
+
+    .coffee-rush {
+        height: 585px;
+    }
+
+    #about {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .chaos-apparel {
+        height: 612px;
+    }
+
+    .movie-search {
+        height: 612px;
+    }
+
+    .coffee-rush {
+        height: 785px;
+    }
+
+    #projects h1,
+    #about h1,
+    #contact h1,
+    #resume h1 {
+        padding-top: 95px;
+    }
+
+    #me {
+        margin-top: 12%;
+    }
+
+    .snap-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    #skill {
+        box-shadow: none;
+    }
+
+    #skill h1 {
+        font-size: 5vw;
+        text-align: left;
+        color: white;
+        padding-top: 75px;
+    }
+
+    .nav-bar {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1615px) {
+    .chaos-apparel {
+        height: 966px;
+    }
+
+    .movie-search {
+        height: 966px;
+    }
+
+    .coffee-rush {
+        height: 1234px;
+    }
+
+}
+
+@media only screen and (min-width: 1842px) {
+    #me {
+        margin-top: 15%;
+    }
+}
