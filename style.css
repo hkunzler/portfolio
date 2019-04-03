@@ -1,10 +1,20 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu',
+        sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    width: 100%
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
 }
 
 #home {
@@ -16,7 +26,7 @@ body {
     background-position: center;
     color: rgb(227, 241, 253);
     position: relative;
-    z-index: -9;
+    z-index: 0;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -100,7 +110,7 @@ body {
     width: 85%;
 }
 
-.top-nav {
+#top-nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -108,13 +118,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99 !important;
+    z-index: 2 !important;
     padding-right: 25px;
-    box-shadow: 1px 2px 3px rgb(29, 26, 41);
 }
 
 .fa-linkedin {
-    color: #0077B5;
+    color: white;
     font-size: 150%;
 }
 
@@ -125,8 +134,8 @@ body {
 
 #initials {
     font-size: 150%;
-    font-family: 'Concert One',
-        cursive;
+    font-family: 'Kanit',
+        sans-serif;
     color: white !important;
     text-shadow: -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -141,48 +150,50 @@ body {
     padding-right: 25px;
 }
 
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+}
+
 .fa-github-alt {
-    color: black;
+    color: white;
     font-size: 150%;
 }
 
-.nav-bar a {
+#nav-bar a {
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 2px black;
-    margin: 25px 0;
+    margin-top: 25px;
+    width: auto;
+    padding: 10px 5px;
 }
+
 
 .links {
     color: rgb(227, 241, 253);
 }
 
-.active {
+.active-nav {
     color: black;
     background-color: rgba(227, 241, 253, 0.5);
     border-radius: 10%;
-    padding: 5px 10px;
     text-shadow: none !important;
+    max-width: 100px;
 }
 
-.nav-bar a:hover {
-    background: white;
+#nav-bar a:hover {
     border-radius: 10%;
-    padding: 5px 10px;
+    background: white;
     color: black;
     text-shadow: none !important;
+    width: auto;
 }
 
-.nav-bar {
-    display: flex;
-    flex-direction: column;
-    margin: 25px 5px;
-    position: fixed;
-    bottom: 0;
-    z-index: 99;
-    left: 0;
-
-}
 
 
 #word {
@@ -231,12 +242,14 @@ body {
     box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.9);
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 #projects h1,
 #about h1,
 #resume h1 {
-    font-size: 10vw;
     text-align: center;
     color: white;
     padding-top: 75px;
@@ -296,11 +309,13 @@ body {
     position: relative;
     width: 100%;
 }
-#flex-row{
+
+#flex-row {
     display: flex;
     flex-direction: column;
 }
-#harmony-pic{
+
+#harmony-pic {
     background: url(media/harmony2.jpg);
     height: 200px;
     width: 100%;
@@ -308,6 +323,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 #about {
     background: url(media/northern_lights_blue.jpeg);
     background-size: cover;
@@ -316,7 +332,7 @@ body {
     min-height: 100vh;
     position: relative;
     color: white;
-    z-index: -9;
+    z-index: 0;
     text-shadow: 1px 1px 2px black;
     text-align: center;
     font-size: 150%;
@@ -397,7 +413,7 @@ body {
     min-height: 100vh;
     position: relative;
     color: white;
-    z-index: -9;
+    z-index: 0;
 }
 
 #resume a {
@@ -479,7 +495,7 @@ body {
     }
 
     #me {
-        margin-top: 12%;
+        margin-top: 15%;
     }
 
     .snap-grid {
@@ -503,10 +519,13 @@ body {
         padding-top: 75px;
     }
 
-    .nav-bar {
+    #nav-bar {
+        top: 0;
+        background: #44162a;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
+
     }
 }
 

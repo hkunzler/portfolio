@@ -11,21 +11,15 @@ $(document).ready(function () {
     }
   });
 });
+///MATERIALIZE
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems);
+});
 
-let word = document.getElementById("word")
-let wordArray = ["developer", "programmer", "gamer", "geek"]
-
-let i = 0;
-
-// setInterval(function () {
-//     document.getElementById('word').innerHTML = `I am a <u>${wordArray[i++]}</u>`
-//     if (i == wordArray.length) {
-//         i = 0
-//     }
-// }, 1000)
 
 $(document).ready(function(){
-  var $sections = $('.container');
+  var $sections = $('.container-section');
   
   $(window).scroll(function(){
     
@@ -42,8 +36,8 @@ $(document).ready(function(){
       }
       
       var id = $currentSection.attr('id');
-   	 $('a').removeClass('active');
-   	 $("[href=#"+id+"]").addClass('active');
+   	 $('a').removeClass('active-nav');
+   	 $("[href=#"+id+"]").addClass('active-nav');
       
     })
 
