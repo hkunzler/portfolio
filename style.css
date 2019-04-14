@@ -250,8 +250,7 @@ nav{
 }
 
 #projects h1,
-#about h1,
-#resume h1 {
+#about h1 {
     text-align: center;
     color: white;
     padding-top: 75px;
@@ -361,7 +360,7 @@ nav{
 }
 
 #contact h1 {
-    font-size: 10vw;
+    font-size: 7vw;
     padding-top: 75px;
     padding-bottom: 0px;
     text-align: center;
@@ -415,7 +414,7 @@ nav{
     font-size: 150%;
 }
 
-#resume {
+/* #resume {
     background: url(media/northern-lights.jpeg);
     background-size: cover;
     background-attachment: fixed;
@@ -424,12 +423,12 @@ nav{
     position: relative;
     color: white;
     z-index: 0;
-}
-
+} */
+/* 
 #resume a {
     color: white;
     font-size: 5vw;
-}
+} */
 
 #form p,
 #form .input,
@@ -499,8 +498,7 @@ nav{
 
     #projects h1,
     #about h1,
-    #contact h1,
-    #resume h1 {
+    #contact h1 {
         padding-top: 95px;
     }
 
