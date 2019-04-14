@@ -9,30 +9,92 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kanit|Ubuntu" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Harmony Kunzler</title>
 </head>
 
 <body>
-    <div id=top-nav>
+    <!-- <div id=top-nav>
         <a href=#home id='initials'></a>
         <div>
             <a href="https://www.linkedin.com/in/hkunzler/"><i class="fab fa-linkedin"></i></a>
             <a href='https://github.com/hkunzler'><i class="fab fa-github-alt"></i></a>
         </div>
+    </div> -->
+    <div class='navbar-fixed'>
+    <nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">HK</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#home"><i class="fas fa-igloo left"></i>Home</a></li>
+            <div class='display-none'>
+            <li><a href="#skill"><i class="far fa-star left"></i>Skill</a></li>
+</div>
+            <li><a href="#projects"><i class="fas fa-cubes left"></i>Projects</a></li>
+            <li><a href="#about"><i class="far fa-laugh-beam left"></i>About</a></li>
+            <li><a href="#contact"><i class="fas fa-mobile-alt left"></i>Contact</a></li>
+            <li><a href="#resume"><i class="fas fa-list left"></i>Resume</a></li>
+        </ul>
     </div>
-    <div id='nav-bar'>
-        <a href="#home" class=" links"><i class="fas fa-igloo"></i> <br> Home </a>
-        <!-- <div class='display-none'> -->
-        <a href="#skill" class="display-none links"><i class="far fa-star"></i><br> Skills </a>
-        <!-- </div> -->
-        <a href="#projects" class="links"><i class="fas fa-cubes"></i> <br> Projects </a>
+</nav>
+</div>
+
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home"><i class="fas fa-igloo left"></i>Home</a></li>
+        <li><a href="#skill"><i class="far fa-star left"></i>Skills</a></li>
+        <li><a href="#projects"><i class="fas fa-cubes left"></i>Projects</a></li>
+        <li><a href="#about"><i class="far fa-laugh-beam left"></i>About</a></li>
+        <li><a href="#contact"><i class="fas fa-mobile-alt left"></i>Contact</a></li>
+        <li><a href="#resume"><i class="fas fa-list left"></i>Resume</a></li>
+    </ul>
+    <!-- <div id='nav-bar'>
+    <a href="#home" class=" links"><i class="fas fa-igloo"></i> <br> Home </a>
+    <div class='display-none'>
+    <a href="#skill" class="display-none links"><i class="far fa-star"></i><br> Skills </a>
+    </div>
+    <a href="#projects" class="links"><i class="fas fa-cubes"></i> <br> Projects </a>
         <a href="#about" class="links"><i class="far fa-laugh-beam"></i> <br> About </a>
         <a href="#contact" class="links"><i class="fas fa-mobile-alt"></i> <br> Contact </a>
         <a href="#resume" class="links"><i class="fas fa-list"></i> <br> Resume</a>
-    </div>
+    </div> -->
+    <!-- <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo ">HK</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <div id='nav-bar'></div>
+                <li><a href="#home" class=" links"><i class="fas fa-igloo"></i> Home </a></li>
+                <div class='display-none'>
+                    <li><a href="#skill" class="display-none links"><i class="far fa-star"></i>Skills </a></li>
+                </div>
+            </div>
+                <li><a href="#projects" class="links"><i class="fas fa-cubes"></i>  Projects </a></li>
+                <li><a href="#about" class="links"><i class="far fa-laugh-beam"></i>  About </a></li>
+                <li><a href="#contact" class="links"><i class="fas fa-mobile-alt"></i>  Contact </a></li>
+                <li><a href="#resume" class="links"><i class="fas fa-list"></i>  Resume</a></li>
+        </div>
+        </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav " id="mobile-demo">
+        <li><a href="#home" class=" links"><i class="fas fa-igloo"></i> <br> Home </a></li>
+        <div class='display-none'>
+            <li><a href="#skill" class="display-none links"><i class="far fa-star"></i><br> Skills </a></li>
+        </div>
+        <li><a href="#projects" class="links"><i class="fas fa-cubes"></i> <br> Projects </a></li>
+        <li><a href="#about" class="links"><i class="far fa-laugh-beam"></i> <br> About </a></li>
+        <li><a href="#contact" class="links"><i class="fas fa-mobile-alt"></i> <br> Contact </a></li>
+        <li><a href="#resume" class="links"><i class="fas fa-list"></i> <br> Resume</a></li>
+        </div>
+    </ul> -->
     <div class='snap-grid'>
         <section class='container-section' id='home'>
             <div class='cards'>

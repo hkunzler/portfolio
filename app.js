@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function () {
 
   $(window).scroll(function () {
@@ -12,10 +15,21 @@ $(document).ready(function () {
   });
 });
 ///MATERIALIZE
+
+document.addEventListener("DOMContentLoaded", function() {
+  var elems = document.querySelectorAll(".sidenav");
+  // var instances = M.Sidenav.init(elems, options);
+  var instances = M.Sidenav.init(elems);
+});
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems);
 });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var elems = document.querySelectorAll(".sidenav");
+//   var instances = M.Sidenav.init(elems, options);
+// });
 
 
 $(document).ready(function(){
@@ -43,3 +57,5 @@ $(document).ready(function(){
 
   });
 });
+
+
